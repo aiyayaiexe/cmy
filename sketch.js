@@ -7,7 +7,7 @@ let baseDistance = 285;
 let colors = ["#FF00FF", "#00FFFF", "#FFFF00"];
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
