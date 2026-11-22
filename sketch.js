@@ -32,7 +32,6 @@ function draw() {
     fill(colors[i] + "10");
     circle(x, y, ballRadius * 2);
   }
-  windowResized();
 }
 
 function windowResized() {
