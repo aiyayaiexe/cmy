@@ -32,6 +32,11 @@ function draw() {
     fill(colors[i] + "10");
     circle(x, y, ballRadius * 2);
   }
+  windowResized();
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 //Describe the process of researching, designing, and fine-tuning your optical illusion. - I began by using the digital artist M:PY for inspiration by looking through his work. From there, I found a piece labeled "No additive blending - pure RGB interpolation. #p5js." I used that as inspiration to create an orbiting triangle of 3 dots in CMY, where I wanted to play with saturation in order for them to show color overlaps. When I finished that code, I decided to play around with adding multiple dots and different colors. During this time, I decided to turn off the background color, which allowed me to see that since the shapes were in draw, it was leaving a smear behind on the background. This created a beautiful effect, which I tweaked with the transparency and sizing to create my graphic.
